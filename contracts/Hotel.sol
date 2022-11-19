@@ -31,3 +31,20 @@ constructor(){
     setHotelRoom(2, "Premium", 5);
     setHotelRoom(3, "Delux", 3);   
 }
+
+function payToBook() public payable{
+    if(msg.value == 10){
+        bookRoomRoyal();
+    }
+
+    if(msg.value == 5){
+        bookRoomPremium();
+    }
+
+    if(msg.value == 3){
+        bookRoomDelux();
+    }   else{
+        revert();
+    }
+}
+
