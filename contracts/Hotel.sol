@@ -23,6 +23,7 @@ function setHotelRoom(uint _roomNo, string memory _categoryName, uint _tarrif) p
     hotelRoomDetails[_roomNo].tarrif = _tarrif;
     hotelRoomDetails[_roomNo].review = 0;
     hotelRoomDetails[_roomNo].reviewNo = 0;
+    noOfRooms++;
 }
 
 constructor(){
